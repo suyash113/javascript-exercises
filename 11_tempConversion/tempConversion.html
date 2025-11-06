@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tempConversion</title>
+</head>
+<body>
+    <h1>--------tempConversion--------</h1>
+    <script>
+        function convertToCelsius(fahrenheit) {
+        // convertToCelsius(32) // fahrenheit to celsius, should return 0 
+        // convertToFahrenheit(0) // celsius to fahrenheit, should return 32 
+            celsius = (fahrenheit - 32)* 5/9
+        return Math.round(celsius * 100) / 100
+    }
+    function convertToFahrenheit(celsius) {
+        fahrenheit = (9/5*celsius) + 32
+        return Math.round(fahrenheit * 100) / 100
+    }
+    console.log(convertToFahrenheit(32))
+    console.log(convertToCelsius(100))
+    </script>
+</body>
+</html>
